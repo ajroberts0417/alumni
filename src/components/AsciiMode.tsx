@@ -41,8 +41,8 @@ function AsciiMode() {
                     <a href="https://fractalbootcamp.com" target="_blank" rel="noopener noreferrer" className="underline">
                         Fractal Tech
                     </a>{" "}
-                    is NYC's new training program for AI engineers. Our placement rate is 100%. Alumni from our first cohort have raised money from South Park Commons and work at
-                    startups like Alpha School, Synthesis, HDR, Ellis, and Drumkit. Email andrew@fractalbootcamp.com to get in touch.
+                    is NYC's new training program for AI engineers. Our placement rate is 100%. First cohort alumni have raised money from South Park Commons and work at
+                    startups like Alpha School, Synthesis, HDR, and Ellis. Email andrew@fractalbootcamp.com to get in touch.
                 </p>
                 {candidates.map((candidate, index) => (
                     <div key={candidate.name} className="mb-10 pb-6 border-b border-gray-300">
