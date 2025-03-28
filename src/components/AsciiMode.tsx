@@ -72,12 +72,10 @@ function AsciiMode() {
 
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-4">
                                     <div>
-                                        <p className="flex items-center gap-2">
+                                        <span className="flex items-center gap-2">
                                             <Mail className="w-5 h-5" />
                                             <a href={`mailto:${candidate.email}`} className="underline">{candidate.email}</a>
-                                        </p>
-                                    </div>
-                                    <div>
+                                        </span>
                                         <p className="flex items-center gap-2">
                                             <Globe className="w-5 h-5" />
                                             <a href={candidate.website} target="_blank" rel="noopener noreferrer" className="underline">Website</a>
@@ -87,23 +85,22 @@ function AsciiMode() {
                                             <a href={candidate.resume} target="_blank" rel="noopener noreferrer" className="underline">Resume</a>
                                         </p>
                                     </div>
-                                </div>
-
-                                <div className="flex flex-wrap gap-4">
-                                    <a href={candidate.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 underline">
-                                        <Linkedin className="w-5 h-5" /> LinkedIn
-                                    </a>
-                                    {candidate.twitter && candidate.twitter !== "none" && (
-                                        <a href={candidate.twitter.startsWith('@') ? `https://x.com/${candidate.twitter.slice(1)}` : candidate.twitter}
-                                            target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 underline">
-                                            <Twitter className="w-5 h-5" /> Twitter
+                                    <div>
+                                        <a href={candidate.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 underline">
+                                            <Linkedin className="w-5 h-5" /> LinkedIn
                                         </a>
-                                    )}
-                                    {candidate.github && (
-                                        <a href={candidate.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 underline">
-                                            <Github className="w-5 h-5" /> GitHub
-                                        </a>
-                                    )}
+                                        {candidate.twitter && candidate.twitter !== "none" && (
+                                            <a href={candidate.twitter.startsWith('@') ? `https://x.com/${candidate.twitter.slice(1)}` : candidate.twitter}
+                                                target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 underline">
+                                                <Twitter className="w-5 h-5" /> Twitter
+                                            </a>
+                                        )}
+                                        {candidate.github && (
+                                            <a href={candidate.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 underline">
+                                                <Github className="w-5 h-5" /> GitHub
+                                            </a>
+                                        )}
+                                    </div>
                                 </div>
                             </div>
                         </div>
