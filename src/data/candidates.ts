@@ -1,7 +1,6 @@
 export interface Candidate {
     name: string;
     email: string;
-    phone: string;
     linkedin: string;
     twitter: string | undefined;
     resume: string;
@@ -15,7 +14,6 @@ export const candidates: Candidate[] = [
     {
         name: "Jacob Waldor",
         email: "jacobwaldor@gmail.com",
-        phone: "9739517500",
         linkedin: "http://linkedin.com/in/jacob-waldor",
         twitter: "https://x.com/jacobwaldor",
         resume: "https://www.jacobwaldor.com/resume",
@@ -26,7 +24,6 @@ export const candidates: Candidate[] = [
     {
         name: "Isaac Gemal",
         email: "isaacgemal@gmail.com",
-        phone: "7327594245",
         linkedin: "https://www.linkedin.com/in/isaac-gemal-278191214",
         twitter: "https://x.com/Aizkmusic",
         resume: "https://www.aizk.sh/Isaac's%20Resume.pdf",
@@ -37,7 +34,6 @@ export const candidates: Candidate[] = [
     {
         name: "Malin Kankanamge",
         email: "malin.kankanamge@gmail.com",
-        phone: "+61451667601",
         linkedin: "https://www.linkedin.com/in/mkankanamge/",
         twitter: "@mahlenr",
         resume: "https://cv.mahlen.dev/",
@@ -48,7 +44,6 @@ export const candidates: Candidate[] = [
     {
         name: "Eri Barrett",
         email: "eri@erosika.digital",
-        phone: "+17325673556",
         linkedin: "https://www.linkedin.com/in/eri-barrett/",
         twitter: "https://x.com/3rosika",
         resume: "https://eri-dev.vercel.app/cv",
@@ -60,7 +55,6 @@ export const candidates: Candidate[] = [
     {
         name: "Ajay Bhargava",
         email: "bhargava.ajay@gmail.com",
-        phone: "908-636-4149",
         linkedin: "https://www.linkedin.com/in/ajaybhargava/",
         twitter: "https://x.com/ajay_bhargava",
         resume: "https://drive.google.com/file/d/1weW7CjPRMMbcMFwMg65yTzZb3s7u_PEY/view?usp=drive_link",
@@ -72,7 +66,6 @@ export const candidates: Candidate[] = [
     {
         name: "Alan Mark Garber",
         email: "a8garber@yahoo.com",
-        phone: "4405239475",
         linkedin: "https://www.linkedin.com/in/alan-garber-659063112/",
         twitter: "https://x.com/AGLabBear/",
         resume: "https://alanmgarber.com/Resume/",
@@ -84,7 +77,6 @@ export const candidates: Candidate[] = [
     {
         name: "Eric Wang",
         email: "erwang1151@gmail.com",
-        phone: "6146203579",
         linkedin: "https://www.linkedin.com/in/ericwang20/",
         twitter: "",
         resume: "https://ewang.vercel.app/wang-resume-2025.pdf",
@@ -96,7 +88,6 @@ export const candidates: Candidate[] = [
     {
         name: "Chenshu Zhou",
         email: "zcs0126@gmail.com",
-        phone: "519-7871-7760",
         linkedin: "https://www.linkedin.com/in/chenshu-zhou-988488116/",
         twitter: "@chenshuz26",
         resume: "https://chenshuz-resume.vercel.app/",

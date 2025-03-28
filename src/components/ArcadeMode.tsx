@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Globe, FileText, Mail, Phone } from 'lucide-react';
+import { Github, Linkedin, Twitter, Globe, FileText, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import BackgroundTile from './BackgroundTile';
 import { candidates } from '../data/candidates';
@@ -90,11 +90,6 @@ function ArcadeMode() {
                                         className="flex items-center gap-2 hover:text-neon-green transition-colors group">
                                         <Mail className="w-5 h-5 group-hover:animate-pulse social-icon" />
                                         <span className="text-shadow-glow">{candidate.email}</span>
-                                    </a>
-                                    <a href={`tel:${candidate.phone}`}
-                                        className="flex items-center gap-2 hover:text-neon-green transition-colors group">
-                                        <Phone className="w-5 h-5 group-hover:animate-pulse social-icon" />
-                                        <span className="text-shadow-glow">{candidate.phone}</span>
                                     </a>
                                 </div>
 
