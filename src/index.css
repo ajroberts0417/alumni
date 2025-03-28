@@ -43,24 +43,39 @@ body {
   /* Neon glow effect */
 }
 
-.retro-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, var(--cyber-blue), var(--neon-green));
-  animation: scanline 2s linear infinite;
+/* Shadow glow for headshot images */
+.shadow-glow {
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.7), 0 0 30px rgba(57, 255, 20, 0.4);
 }
 
-@keyframes scanline {
+/* Headshot container styling and animation */
+.headshot-container {
+  animation: pulse-border 2s infinite alternate;
+  z-index: 10;
+}
+
+.headshot-container img {
+  transition: transform 0.3s ease;
+}
+
+.headshot-container:hover img {
+  transform: scale(1.1);
+}
+
+@keyframes pulse-border {
   0% {
-    transform: translateY(-100%);
+    border-color: var(--cyber-blue);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+  }
+
+  50% {
+    border-color: var(--neon-green);
+    box-shadow: 0 0 15px rgba(57, 255, 20, 0.7);
   }
 
   100% {
-    transform: translateY(400%);
+    border-color: var(--hot-pink);
+    box-shadow: 0 0 10px rgba(255, 20, 147, 0.7);
   }
 }
 
@@ -158,5 +173,20 @@ body {
     width: 35px;
     height: 35px;
     font-size: 1rem;
+  }
+
+  .headshot-container {
+    width: 50px !important;
+    height: 50px !important;
+    top: 3px !important;
+    right: 3px !important;
+  }
+}
+
+/* Medium size screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .headshot-container {
+    width: 60px !important;
+    height: 60px !important;
   }
 }
