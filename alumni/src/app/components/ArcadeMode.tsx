@@ -1,9 +1,11 @@
+'use client';
 import { Github, Linkedin, Twitter, Globe, FileText, Mail } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import BackgroundTile from './BackgroundTile';
 import { candidates } from '../data/candidates';
 
 function ArcadeMode() {
+
     const colorScheme = [
         'bg-hot-pink', 'bg-neon-green', 'bg-cyber-blue',
         'bg-bright-orange', 'bg-electric-yellow', 'bg-cyber-blue', 'bg-retro-purple'
@@ -14,7 +16,7 @@ function ArcadeMode() {
             <div className="py-12 px-4 sm:px-6 lg:px-8">
                 {/* Mode toggle button */}
                 <Link
-                    to="/"
+                    href="/"
                     className="fixed bottom-4 right-4 z-40 px-4 py-2 bg-white border border-black text-black hover:bg-gray-100 w-64 text-center transition-colors"
                 >
                     ascii mode

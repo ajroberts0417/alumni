@@ -29,7 +29,7 @@ export const candidates: Candidate[] = [
         resume: "https://www.aizk.sh/Isaac's%20Resume.pdf",
         website: "Aizk.sh",
         bio: "Engineer experienced in dealing with physical and digital infrastructure.",
-        headshot: "https://media.discordapp.net/attachments/1285631473155571732/1354925564691218672/image.png?ex=67e71043&is=67e5bec3&hm=3e4e0ec198cf19deeaf2e7d59e16f26e379511e72d8945e626d96f4b17a04b20&=&format=webp&quality=lossless&width=1584&height=1584"
+        headshot: "https://cdn.discordapp.com/attachments/1285631473155571732/1354925564691218672/image.png?ex=67e861c3&is=67e71043&hm=27ae79ebcbb476830906c7cae5d0b97bc7248b505e89b6e2e06bc178b318f5cf&"
     },
     {
         name: "Malin Kankanamge",

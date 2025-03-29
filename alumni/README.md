@@ -12,7 +12,7 @@ A retro-styled showcase of talented software engineers from Fractal Tech. Built 
 
 ## Tech Stack
 
-- React 18
+- NextJS
 - TypeScript
 - Tailwind CSS
 - Vite

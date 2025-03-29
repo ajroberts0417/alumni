@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom';
+'use client';
+import Link from 'next/link';
+import Image from 'next/image';
 import { candidates } from '../data/candidates';
-import hdbitsy from '../img/bghd_nyc.png'
 import { Github, Linkedin, Twitter, Globe, FileText, Mail } from 'lucide-react';
 
 function AsciiMode() {
@@ -8,7 +9,7 @@ function AsciiMode() {
         <div className="bg-white text-black font-mono p-8">
             {/* Arcade Mode toggle button */}
             <Link
-                to="/arcade"
+                href="/arcade"
                 className="fixed bottom-4 right-4 z-40 px-4 py-2 bg-retro-purple border-2 border-hot-pink text-white font-pixel text-shadow-neon hover:scale-105 transition-transform w-64 text-center"
             >
                 arcade mode
@@ -109,9 +110,11 @@ function AsciiMode() {
             </div>
 
             {/* New ASCII NYC Skyline */}
-            <img
-                src={hdbitsy}
+            <Image
+                src="/img/bghd_nyc.png"
                 alt="NYC Skyline"
+                width={500}
+                height={200}
                 className="w-full max-w-md mx-auto mt-10 rounded-lg shadow-lg"
             />
         </div>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import bghdImage from '../img/bghd.png';
+// Removed image import: import bghdImage from '../img/bghd.png';
 
 interface BackgroundTileProps {
     tileSize?: number;
@@ -12,6 +12,9 @@ const BackgroundTile: React.FC<BackgroundTileProps> = ({
     opacity = 0.9,
     children
 }) => {
+    // Add 'use client' directive
+    'use client';
+
     const [scaledTileSize, setScaledTileSize] = useState(tileSize);
 
     // Adjust tile size based on screen width
@@ -38,7 +41,7 @@ const BackgroundTile: React.FC<BackgroundTileProps> = ({
             <div
                 className="fixed inset-0 z-0"
                 style={{
-                    backgroundImage: `url(${bghdImage})`,
+                    backgroundImage: 'url(/img/bghd.png)', // Updated path
                     backgroundRepeat: 'repeat',
                     backgroundSize: `${scaledTileSize}px ${scaledTileSize}px`,
                     opacity: opacity,
