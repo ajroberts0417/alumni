@@ -34,7 +34,7 @@ function SubmitButton({ mode }: { mode: 'ascii' | 'arcade' }) {
             disabled={pending}
             className="p-2 bg-hot-pink text-white font-pixel hover:bg-retro-purple text-shadow-neon transition-colors disabled:opacity-50"
         >
-            {pending ? 'SUBSCRIBING...' : 'SUBSCRIBE FOR ALPHA ;)'}
+            {pending ? 'SUBSCRIBING...' : 'FREE ALPHA'}
         </button>
     );
 }
@@ -117,7 +117,7 @@ export default function EmailSubscribe({ mode }: EmailSubscribeProps) {
                 </div>
                 <ActionMessage state={state} mode="arcade" />
                 <p className="text-xs text-electric-yellow font-pixel">
-                    We will email you everytime we train another batch of AI engineers. No spam.
+                    GET EMAILS WHEN WE PRODUCE MORE TALENT. YUM. FREE TALENT.
                 </p>
             </form>
         </div>
