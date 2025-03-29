@@ -1,0 +1,1 @@
+This is a monorepo, the actual app is in alumni-nextjs

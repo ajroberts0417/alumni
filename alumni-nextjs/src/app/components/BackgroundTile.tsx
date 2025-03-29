@@ -1,5 +1,5 @@
+'use client';
 import React, { useEffect, useState } from 'react';
-// Removed image import: import bghdImage from '../img/bghd.png';
 
 interface BackgroundTileProps {
     tileSize?: number;
@@ -9,13 +9,10 @@ interface BackgroundTileProps {
 
 const BackgroundTile: React.FC<BackgroundTileProps> = ({
     tileSize = 350,
-    opacity = 0.9,
     children
 }) => {
-    // Add 'use client' directive
-    'use client';
-
     const [scaledTileSize, setScaledTileSize] = useState(tileSize);
+    const [imageLoaded, setImageLoaded] = useState(false);
 
     // Adjust tile size based on screen width
     useEffect(() => {
@@ -32,6 +29,18 @@ const BackgroundTile: React.FC<BackgroundTileProps> = ({
 
         handleResize(); // Initial setup
         window.addEventListener('resize', handleResize);
+
+        // Check if image exists
+        const img = new Image();
+        img.onload = () => {
+            console.log('Background image loaded successfully');
+            setImageLoaded(true);
+        };
+        img.onerror = () => {
+            console.error('Failed to load background image');
+        };
+        img.src = '/img/bghd.png';
+
         return () => window.removeEventListener('resize', handleResize);
     }, [tileSize]);
 
@@ -41,20 +50,18 @@ const BackgroundTile: React.FC<BackgroundTileProps> = ({
             <div
                 className="fixed inset-0 z-0"
                 style={{
-                    backgroundImage: 'url(/img/bghd.png)', // Updated path
+                    backgroundImage: 'url(/img/bghd.png)',
                     backgroundRepeat: 'repeat',
                     backgroundSize: `${scaledTileSize}px ${scaledTileSize}px`,
-                    opacity: opacity,
+                    opacity: 1,
                 }}
             />
 
-            {/* Content overlay for readability - reduced opacity */}
-            <div className="fixed inset-0 z-10 bg-black bg-opacity-65 pointer-events-none" />
-
-            {/* Removed grid pattern overlay */}
+            {/* Removed the black overlay completely */}            {/* Content overlay for readability - reduced opacity */}
+            <div className="fixed inset-0 z-10 bg-black opacity-30 pointer-events-none" />
 
             {/* Actual content */}
-            <div className="relative z-30">
+            <div className="relative z-20">
                 {children}
             </div>
         </div>
