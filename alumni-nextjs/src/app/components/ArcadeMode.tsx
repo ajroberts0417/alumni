@@ -96,7 +96,7 @@ function ArcadeMode() {
                                 </div>
 
                                 {/* Scanline effect decoration */}
-                                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-hot-pink via-cyber-blue to-neon-green opacity-70"></div>
+                                <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-hot-pink via-cyber-blue to-neon-green opacity-70"></div>
                             </div>
                         ))}
                     </div>
