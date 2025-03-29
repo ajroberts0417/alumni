@@ -3,6 +3,7 @@ import { Github, Linkedin, Twitter, Globe, FileText, Mail } from 'lucide-react';
 import Link from 'next/link';
 import BackgroundTile from './BackgroundTile';
 import { candidates } from '../data/candidates';
+import EmailSubscribe from './EmailSubscribe';
 
 function ArcadeMode() {
 
@@ -23,7 +24,7 @@ function ArcadeMode() {
                 </Link>
 
                 <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-16">
+                    <div className="text-center mb-8">
                         <h1 className="font-pixel text-white mb-6 title-glitch">
                             FRACTAL ARCADE MODE!!!
                         </h1>
@@ -31,6 +32,9 @@ function ArcadeMode() {
                             hire my students :)
                         </h2>
                     </div>
+
+                    {/* Email Subscription Form */}
+                    <EmailSubscribe mode="arcade" />
 
                     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                         {candidates.map((candidate) => (

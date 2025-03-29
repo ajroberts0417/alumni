@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { candidates } from '../data/candidates';
 import { Github, Linkedin, Twitter, Globe, FileText, Mail } from 'lucide-react';
+import EmailSubscribe from './EmailSubscribe';
 
 function AsciiMode() {
     return (
@@ -34,7 +35,6 @@ function AsciiMode() {
 `}
             </pre>
 
-
             {/* Candidates List */}
             <div className="max-w-4xl mx-auto">
                 {/* Fractal Info */}
@@ -45,6 +45,8 @@ function AsciiMode() {
                     is NYC's new training program for AI engineers. Our placement rate is 100%. First cohort alumni have raised money from South Park Commons and work at
                     startups like Alpha School, Synthesis, HDR, and Ellis. Email andrew@fractalbootcamp.com to get in touch.
                 </p>
+                {/* Email Subscription Form */}
+                <EmailSubscribe mode="ascii" />
                 {candidates.map((candidate, index) => (
                     <div key={candidate.name} className="mb-10 pb-6 border-b border-gray-300">
                         <div className="flex flex-col md:flex-row gap-6">
