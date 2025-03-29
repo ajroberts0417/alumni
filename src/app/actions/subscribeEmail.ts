@@ -1,16 +1,13 @@
 'use server';
 
 import { Resend } from 'resend';
-import { createClient } from '@supabase/supabase-js';
+import { db } from '@/db';
+import { talentSubscribers } from '@/db/schema';
+import { eq } from 'drizzle-orm';
 import { SubscribeState } from '../types/subscribe';
 
 // Initialize Resend with API key
 const resend = new Resend(process.env.RESEND_API_KEY);
-
-// Initialize Supabase client
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
-const supabaseKey = process.env.SUPABASE_SERVICE_KEY || '';
-const supabase = createClient(supabaseUrl, supabaseKey);
 
 export async function subscribeEmail(
     prevState: SubscribeState,
@@ -27,29 +24,26 @@ export async function subscribeEmail(
     }
 
     try {
-        // Add email to Supabase
-        const { error: supabaseError } = await supabase
-            .from('subscribers')
-            .insert([{ email, subscribed_at: new Date().toISOString() }])
-            .select();
+        // Check if email already exists
+        const existingUser = await db.select()
+            .from(talentSubscribers)
+            .where(eq(talentSubscribers.email, email))
+            .limit(1);
 
-        if (supabaseError) {
-            // If the email already exists, don't treat it as an error
-            if (supabaseError.code === '23505') { // Unique violation code
-                return {
-                    success: true,
-                    message: 'You\'re already subscribed!',
-                    status: 'success'
-                };
-            }
-
-            console.error('Supabase error:', supabaseError);
+        if (existingUser.length > 0) {
             return {
-                success: false,
-                error: 'Failed to subscribe',
-                status: 'error'
+                success: true,
+                message: 'You\'re already subscribed!',
+                status: 'success'
             };
         }
+
+        // Add email to database
+        await db.insert(talentSubscribers)
+            .values({
+                email,
+                subscribedAt: new Date()
+            });
 
         // Send confirmation email
         const { error: resendError } = await resend.emails.send({
@@ -78,6 +72,16 @@ export async function subscribeEmail(
         };
     } catch (error) {
         console.error('Subscription error:', error);
+
+        // Check if it's a unique constraint violation
+        if (error instanceof Error && error.message.includes('duplicate key')) {
+            return {
+                success: true,
+                message: 'You\'re already subscribed!',
+                status: 'success'
+            };
+        }
+
         return {
             success: false,
             error: 'An unexpected error occurred',
