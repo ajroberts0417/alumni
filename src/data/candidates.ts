@@ -29,7 +29,7 @@ export const candidates: Candidate[] = [
         resume: "https://www.aizk.sh/Isaac's%20Resume.pdf",
         website: "Aizk.sh",
         bio: "Engineer experienced in dealing with physical and digital infrastructure.",
-        headshot: "https://media.discordapp.net/attachments/1285631473155571732/1354925564691218672/image.png?ex=67e71043&is=67e5bec3&hm=3e4e0ec198cf19deeaf2e7d59e16f26e379511e72d8945e626d96f4b17a04b20&=&format=webp&quality=lossless&width=1584&height=1584"
+        headshot: "/images/isaac.png"
     },
     {
         name: "Malin Kankanamge",
@@ -39,7 +39,7 @@ export const candidates: Candidate[] = [
         resume: "https://cv.mahlen.dev/",
         website: "https://mahlen.dev",
         bio: "In a previous life I worked on banking infrastructure at some of Australia's top financial institutions. In 2024, I leaned in to a desire for more creativity in my work and I made the leap to software engineering through NYC's Fractal Tech SWE Accelerator. This was like a religious experience where I fell deeply in love with the process of building software. I built products ranging from AI voice therapists to e-commerce platforms to PDF analysis tools and many many more. I won an AI Agents hackathon and shipped real features for local NYC startups. Now i'm looking to join a brilliant team of engineers and creatives on a mission to build something incredible.",
-        headshot: "https://media.discordapp.net/attachments/1234383633956212809/1354933713783488703/Screenshot_2025-03-28_at_8.18.42_am.png?ex=67e717da&is=67e5c65a&hm=c85b0dbcd74b559fbb8d3c270ca7ad0b5aa4d5c0cf0b9847b6e42d3cb7a25f39&=&format=webp&quality=lossless&width=1568&height=1584"
+        headshot: "/images/mahlen.png"
     },
     {
         name: "Eri Barrett",
@@ -82,7 +82,7 @@ export const candidates: Candidate[] = [
         resume: "https://ewang.vercel.app/wang-resume-2025.pdf",
         website: "https://ewang.vercel.app/",
         bio: "",
-        github: "https://github.com/ewang0/racquet-club-receptionist",
+        github: "https://github.com/ewang0",
         headshot: "https://media.licdn.com/dms/image/v2/D4E03AQELavzeGQET1g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1698239694877?e=1748476800&v=beta&t=VoEMy_j5fJwFTF2wWqVeII9T4w5OI1_ect0-21xTApE"
     },
     {
