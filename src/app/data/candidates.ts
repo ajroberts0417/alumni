@@ -82,7 +82,7 @@ export const candidates: Candidate[] = [
         resume: "https://ewang.vercel.app/wang-resume-2025.pdf",
         website: "https://ewang.vercel.app/",
         bio: "",
-        github: "https://github.com/ewang0/racquet-club-receptionist",
+        github: "https://github.com/ewang0",
         headshot: "https://media.licdn.com/dms/image/v2/D4E03AQELavzeGQET1g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1698239694877?e=1748476800&v=beta&t=VoEMy_j5fJwFTF2wWqVeII9T4w5OI1_ect0-21xTApE"
     },
     {
