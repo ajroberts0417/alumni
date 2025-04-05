@@ -72,7 +72,7 @@ export const candidates: Candidate[] = [
         website: "https://alanmgarber.com/",
         bio: "After graduating law school in 2022, I worked as a frontend engineer in Cleveland, OH, for two years, specializing in React and TypeScript. In 2025, I moved to New York and enrolled in the Fractal Bootcamp to become a full-stack specialist. I'm always excited to learn new things! Many of my personal projects over the past year have focused on creating immersive experiences with LLMs so users can get more out of the websites they are visiting.",
         github: "https://github.com/OldEphraim",
-        headshot: "https://media.discordapp.net/attachments/1045735023359295588/1354948261991026688/image0_-_Alan_Garber.jpeg?ex=67e72567&is=67e5d3e7&hm=5c7df6612958c37c647d16cb5bae20de4e3e818eda8d93ae6a3cbe249ab2ef19&=&format=webp&width=589&height=718"
+        headshot: "/images/alan.jpeg"
     },
     {
         name: "Eric Wang",
