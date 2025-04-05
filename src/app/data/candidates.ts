@@ -29,7 +29,7 @@ export const candidates: Candidate[] = [
         resume: "https://www.aizk.sh/Isaac's%20Resume.pdf",
         website: "Aizk.sh",
         bio: "Engineer experienced in dealing with physical and digital infrastructure.",
-        headshot: "https://cdn.discordapp.com/attachments/1285631473155571732/1354925564691218672/image.png?ex=67e861c3&is=67e71043&hm=27ae79ebcbb476830906c7cae5d0b97bc7248b505e89b6e2e06bc178b318f5cf&"
+        headshot: "/images/isaac.png"
     },
     {
         name: "Malin Kankanamge",
@@ -39,7 +39,7 @@ export const candidates: Candidate[] = [
         resume: "https://cv.mahlen.dev/",
         website: "https://mahlen.dev",
         bio: "In a previous life I worked on banking infrastructure at some of Australia's top financial institutions. In 2024, I leaned in to a desire for more creativity in my work and I made the leap to software engineering through NYC's Fractal Tech SWE Accelerator. This was like a religious experience where I fell deeply in love with the process of building software. I built products ranging from AI voice therapists to e-commerce platforms to PDF analysis tools and many many more. I won an AI Agents hackathon and shipped real features for local NYC startups. Now i'm looking to join a brilliant team of engineers and creatives on a mission to build something incredible.",
-        headshot: "https://media.discordapp.net/attachments/1234383633956212809/1354933713783488703/Screenshot_2025-03-28_at_8.18.42_am.png?ex=67e717da&is=67e5c65a&hm=c85b0dbcd74b559fbb8d3c270ca7ad0b5aa4d5c0cf0b9847b6e42d3cb7a25f39&=&format=webp&quality=lossless&width=1568&height=1584"
+        headshot: "/images/mahlen.png"
     },
     {
         name: "Eri Barrett",
@@ -72,7 +72,7 @@ export const candidates: Candidate[] = [
         website: "https://alanmgarber.com/",
         bio: "After graduating law school in 2022, I worked as a frontend engineer in Cleveland, OH, for two years, specializing in React and TypeScript. In 2025, I moved to New York and enrolled in the Fractal Bootcamp to become a full-stack specialist. I'm always excited to learn new things! Many of my personal projects over the past year have focused on creating immersive experiences with LLMs so users can get more out of the websites they are visiting.",
         github: "https://github.com/OldEphraim",
-        headshot: "https://media.discordapp.net/attachments/1045735023359295588/1354948261991026688/image0_-_Alan_Garber.jpeg?ex=67e72567&is=67e5d3e7&hm=5c7df6612958c37c647d16cb5bae20de4e3e818eda8d93ae6a3cbe249ab2ef19&=&format=webp&width=589&height=718"
+        headshot: "/images/alan.jpeg"
     },
     {
         name: "Eric Wang",
