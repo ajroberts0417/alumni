@@ -3,7 +3,17 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   images: {
-    domains: ['unsplash.com', 'images.unsplash.com', 'media.licdn.com'],
+    remotePatterns: [
+      {
+        hostname: 'unsplash.com',
+      },
+      {
+        hostname: 'images.unsplash.com',
+      },
+      {
+        hostname: 'media.licdn.com',
+      },
+    ],
   },
 };
 
