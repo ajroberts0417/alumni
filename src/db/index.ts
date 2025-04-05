@@ -6,5 +6,5 @@ if (!process.env.DATABASE_URL) {
 }
 
 // For server actions, we can use a singleton client
-const client = postgres(process.env.DATABASE_URL);
+const client = postgres(process.env.DATABASE_URL, { prepare: false });
 export const db = drizzle(client); 
