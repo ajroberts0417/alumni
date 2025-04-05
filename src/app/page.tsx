@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 // Define page-specific metadata
 export const metadata: Metadata = {
   title: 'Fractal Tech Alumni Roster - Home',
-  description: 'Browse talented AI engineers from Fractal Tech program',
+  description: "Fractal Tech Alumni Roster - hire talented AI engineers from Fractal's NYC Tech accelerator.",
 };
 
 // Add caching directives for Next.js 15
