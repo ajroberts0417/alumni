@@ -16,10 +16,12 @@ const CandidateCard = ({ candidate }: { candidate: Candidate }) => {
                 <div className="w-1/3 md:w-1/4 mx-auto md:mx-0">
                     <div className="relative">
                         {candidate.headshot ? (
-                            <img
+                            <Image
                                 src={candidate.headshot}
                                 alt={`${candidate.name}`}
                                 className="w-full aspect-square object-cover border-2 border-black"
+                                width={400}
+                                height={400}
                             />
                         ) : (
                             <div className="w-full aspect-square border-2 border-black flex items-center justify-center bg-gray-100">

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import BackgroundTile from './BackgroundTile';
 import { recentCandidates, pastCandidates, Candidate } from '../data/candidates';
 import EmailSubscribe from './EmailSubscribe';
+import Image from 'next/image';
 
 function ArcadeMode() {
     const colorScheme = [
@@ -15,28 +16,21 @@ function ArcadeMode() {
         <div
             key={candidate.name}
             className="retro-card p-6 
-                transform transition-all duration-300 hover:scale-105 
-                hover:shadow-[0_0_25px_rgba(0,255,255,0.7)] relative"
+                transform transition-all duration-300 hover:scale-105
+                hover:shadow-[0_0_25px_rgba(0,255,255,0.7)] relative flex flex-col"
         >
             {/* Circular headshot in top right corner */}
             <div className="relative">
                 {candidate.headshot && (
                     <div className="absolute top-4 right-4 w-16 h-16 rounded-full overflow-hidden border-2 border-cyber-blue shadow-glow headshot-container">
-                        <img
+                        <Image
                             src={candidate.headshot}
                             alt={`${candidate.name}'s headshot`}
                             className="w-full h-full object-cover"
+                            width={150}
+                            height={150}
                         />
                     </div>
-                )}
-                {candidate.status !== 'open' && (
-                    <p className="text-neon-green text-sm font-pixel mt-2 text-shadow-neon">
-                        {candidate.status === 'founded' ? (
-                            'FOUNDER'
-                        ) : (
-                            `HIRED BY: ${candidate.currentCompany}`
-                        )}
-                    </p>
                 )}
             </div>
 
@@ -84,17 +78,25 @@ function ArcadeMode() {
                 </a>
             </div>
 
-            {/* Scanline effect decoration */}
-            <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-hot-pink via-cyber-blue to-neon-green opacity-70"></div>
-
             {/* Hired Overlay */}
             {candidate.status !== 'open' && (
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                     <img
                         src="/hired.png"
                         alt="Hired"
-                        className="h-full w-auto object-contain opacity-30"
+                        className="h-full w-auto object-contain opacity-40 hue-rotate-120"
                     />
+                </div>
+            )}
+            {candidate.status !== 'open' && (
+                <div className="mt-auto pt-3">
+                    <p className="text-neon-green text-sm font-pixel text-shadow-neon text-right">
+                        {candidate.status === 'founded' ? (
+                            'FOUNDER'
+                        ) : (
+                            `HIRED BY: ${candidate.currentCompany}`
+                        )}
+                    </p>
                 </div>
             )}
         </div>
@@ -128,7 +130,7 @@ function ArcadeMode() {
                     {recentCandidates.length > 0 && (
                         <>
                             <h2 className="text-3xl font-pixel text-neon-green mb-8 mt-12 text-center text-shadow-neon">
-                                RECENT CANDIDATES
+                                <div className="bg-dark p-1 inline-block">SPRING STUDENTS</div>
                             </h2>
                             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                                 {recentCandidates.map((candidate) => (
@@ -141,8 +143,8 @@ function ArcadeMode() {
                     {/* Past Candidates Section */}
                     {pastCandidates.length > 0 && (
                         <>
-                            <h2 className="text-3xl font-pixel text-hot-pink mb-8 mt-16 text-center text-shadow-neon">
-                                PAST CANDIDATES
+                            <h2 className="text-3xl font-pixel text-neon-green mb-8 mt-16 text-center text-shadow-neon">
+                                <div className="bg-dark p-1 inline-block">FORMER STUDENTS</div>
                             </h2>
                             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                                 {pastCandidates.map((candidate) => (

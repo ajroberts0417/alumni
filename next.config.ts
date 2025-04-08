@@ -13,6 +13,9 @@ const nextConfig: NextConfig = {
       {
         hostname: 'media.licdn.com',
       },
+      {
+        hostname: 'avatars.githubusercontent.com',
+      },
     ],
   },
 };
