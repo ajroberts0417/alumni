@@ -5,9 +5,12 @@ export interface Candidate {
     twitter: string | undefined;
     resume: string;
     website: string;
-    bio: string;
+    bio?: string;
     github?: string;
     headshot?: string;
+    cohort: string;
+    status: 'open' | 'hired' | 'founded';
+    currentCompany?: string;
 }
 
 export const candidates: Candidate[] = [
@@ -19,7 +22,9 @@ export const candidates: Candidate[] = [
         resume: "https://www.jacobwaldor.com/resume",
         website: "https://www.jacobwaldor.com",
         bio: "Jacob is a bright, young software engineer, mathematician, and data scientist. He wants to have a serious impact at a software or AI company with an exceptional team and has been rigorously studying software and AI engineering for the last several months.",
-        headshot: "https://media.licdn.com/dms/image/v2/D4E03AQG85gIxelBfaA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1680124740365?e=1748476800&v=beta&t=ZfWIQspwlkil87_lrZjOycnWWsKbaKtBiTSg6kGdEEw"
+        headshot: "https://media.licdn.com/dms/image/v2/D4E03AQG85gIxelBfaA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1680124740365?e=1748476800&v=beta&t=ZfWIQspwlkil87_lrZjOycnWWsKbaKtBiTSg6kGdEEw",
+        cohort: "Fa24",
+        status: "open"
     },
     {
         name: "Isaac Gemal",
@@ -29,7 +34,10 @@ export const candidates: Candidate[] = [
         resume: "https://www.aizk.sh/Isaac's%20Resume.pdf",
         website: "Aizk.sh",
         bio: "Engineer experienced in dealing with physical and digital infrastructure.",
-        headshot: "/images/isaac.png"
+        headshot: "/images/isaac.png",
+        cohort: "Fa24",
+        status: "hired",
+        currentCompany: "Headstart.nyc"
     },
     {
         name: "Malin Kankanamge",
@@ -39,7 +47,9 @@ export const candidates: Candidate[] = [
         resume: "https://cv.mahlen.dev/",
         website: "https://mahlen.dev",
         bio: "In a previous life I worked on banking infrastructure at some of Australia's top financial institutions. In 2024, I leaned in to a desire for more creativity in my work and I made the leap to software engineering through NYC's Fractal Tech SWE Accelerator. This was like a religious experience where I fell deeply in love with the process of building software. I built products ranging from AI voice therapists to e-commerce platforms to PDF analysis tools and many many more. I won an AI Agents hackathon and shipped real features for local NYC startups. Now i'm looking to join a brilliant team of engineers and creatives on a mission to build something incredible.",
-        headshot: "/images/mahlen.png"
+        headshot: "/images/mahlen.png",
+        cohort: "Fa24",
+        status: "open"
     },
     {
         name: "Eri Barrett",
@@ -50,7 +60,9 @@ export const candidates: Candidate[] = [
         website: "https://eri-dev.vercel.app/",
         bio: "Hey I am Eri and I am a self-taught dev with a background in computer music. I love to build beautiful software for the world to enjoy. As a forever learner who's extremely dedicated with clarity of focus, I love to dive deep into problems & ship swiftly. My mission in tech is to architect transformative digital landscapes ––creating systems that reshape how we interact with technology, remaining accessible to all.",
         github: "https://github.com/erosika",
-        headshot: "https://media.licdn.com/dms/image/v2/D4E03AQHWbDFeVUCo5w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725224435831?e=1748476800&v=beta&t=NP-GTrk_g-j0RX15fkmiGluv6jH7ofZGf04QVSiNG4I"
+        headshot: "https://media.licdn.com/dms/image/v2/D4E03AQHWbDFeVUCo5w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725224435831?e=1748476800&v=beta&t=NP-GTrk_g-j0RX15fkmiGluv6jH7ofZGf04QVSiNG4I",
+        cohort: "Sp25",
+        status: "open"
     },
     {
         name: "Ajay Bhargava",
@@ -62,6 +74,8 @@ export const candidates: Candidate[] = [
         bio: "",
         github: "https://github.com/ajay-bhargava",
         headshot: "https://media.licdn.com/dms/image/v2/C4E03AQHjK0nUgkm_qA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1668045721230?e=1748476800&v=beta&t=lLbXQRo8sc7OKLhmyGmGOt4EFnEtOhect0MqPK7WUWw",
+        cohort: "Sp25",
+        status: "open"
     },
     {
         name: "Alan Mark Garber",
@@ -72,7 +86,9 @@ export const candidates: Candidate[] = [
         website: "https://alanmgarber.com/",
         bio: "After graduating law school in 2022, I worked as a frontend engineer in Cleveland, OH, for two years, specializing in React and TypeScript. In 2025, I moved to New York and enrolled in the Fractal Bootcamp to become a full-stack specialist. I'm always excited to learn new things! Many of my personal projects over the past year have focused on creating immersive experiences with LLMs so users can get more out of the websites they are visiting.",
         github: "https://github.com/OldEphraim",
-        headshot: "/images/alan.jpeg"
+        headshot: "/images/alan.jpeg",
+        cohort: "Sp25",
+        status: "open"
     },
     {
         name: "Eric Wang",
@@ -83,7 +99,9 @@ export const candidates: Candidate[] = [
         website: "https://ewang.vercel.app/",
         bio: "",
         github: "https://github.com/ewang0",
-        headshot: "https://media.licdn.com/dms/image/v2/D4E03AQELavzeGQET1g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1698239694877?e=1748476800&v=beta&t=VoEMy_j5fJwFTF2wWqVeII9T4w5OI1_ect0-21xTApE"
+        headshot: "https://media.licdn.com/dms/image/v2/D4E03AQELavzeGQET1g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1698239694877?e=1748476800&v=beta&t=VoEMy_j5fJwFTF2wWqVeII9T4w5OI1_ect0-21xTApE",
+        cohort: "Sp25",
+        status: "open"
     },
     {
         name: "Chenshu Zhou",
@@ -94,5 +112,160 @@ export const candidates: Candidate[] = [
         website: "https://chenshuz.vercel.app/",
         bio: "I'm Chenshu, a software engineer with 4 years of experience at AWS, where I built scalable backend systems and APIs. I'm looking for a mission driven team to build things with positive social impacts.",
         headshot: "https://media.licdn.com/dms/image/v2/C5603AQHlLZNFSmTrvw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1543434361525?e=1748476800&v=beta&t=dwFUc8PIogfkJLBgpSiEHsAtZ7G38iL_KjD47qN2azw",
+        cohort: "Fa24",
+        status: "hired",
+        currentCompany: "Amazon Web Services"
+    },
+    {
+        name: "Rashik Shahjahan",
+        email: "rashikshahjahan@protonmail.com",
+        linkedin: "https://linkedin.com/in/rashikshahjahan",
+        twitter: "https://x.com/RashikShahjahan",
+        resume: "https://www.rashik.sh/resumeRashikShahjahan.pdf",
+        website: "https://www.rashik.sh/",
+        headshot: "https://avatars.githubusercontent.com/u/20547252?v=4",
+        bio: "I am a software engineer with expertise in full-stack development, distributed systems, and AI. I co-invented a patent-pending system to process large medical corpora and led the development and deployment of a metrics monitoring system across four major clients, including Mayo Clinic and Duke Hospital.",
+        cohort: "Fa24",
+        status: "hired",
+        currentCompany: "Gridify AI"
+    },
+    {
+        name: "Faisal Owimer",
+        email: "faisal@owimer.co",
+        linkedin: "https://www.linkedin.com/in/faisal-owimer/",
+        twitter: "faisalowimer",
+        resume: "resume.owimer.co",
+        website: "https://www.owimer.co/",
+        bio: "As the first employee of a fintech startup, I drove critical growth by raising $2M in funding, launching the product, and scaling to $150M+ in assets under management. As a software engineer, I developed full-stack applications using React, TypeScript, Node.js, and modern data technologies.",
+        cohort: "Fa24",
+        status: "hired",
+        currentCompany: "Goodie AI",
+        headshot: "https://media.licdn.com/dms/image/v2/D4E03AQGQi9TX-x1_0w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718401347792?e=1749686400&v=beta&t=GoxUcS_hKNc4fcpVTqxDQ44YrNzP9_bJN8CcJ-WIXvA"
+    },
+    {
+        name: "Dorothy Ren",
+        email: "dorothy.x.ren@gmail.com",
+        linkedin: "https://www.linkedin.com/in/dorothyxren/",
+        twitter: "https://x.com/dorothyxren",
+        resume: "",
+        website: "https://x.com/dorothyxren",
+        github: "https://github.com/dxren",
+        cohort: "Su24",
+        status: "hired",
+        currentCompany: "Ellis",
+        headshot: "/images/dorothy.jpg"
+    },
+    {
+        name: "Daniel Gavidia",
+        email: "dgavidia1@gmail.com",
+        linkedin: "https://www.linkedin.com/in/danielgavidia1/",
+        twitter: "https://x.com/dgavidia1",
+        resume: "https://danielgavidia.vercel.app/resume",
+        website: "https://danielgavidia.vercel.app/",
+        github: "https://github.com/danielgavidia",
+        cohort: "Fa24",
+        status: "hired",
+        currentCompany: "ESAI",
+        headshot: "/images/daniel.jpg"
+    },
+    {
+        name: "Patrick Astarita",
+        email: "PATRICKASTARITA@GMAIL.COM",
+        linkedin: "https://www.linkedin.com/in/patrickastarita/",
+        twitter: "https://x.com/pastarita27",
+        resume: "https://www.patrickastarita.com/assets/patrick_astarita_resume_2025.pdf",
+        website: "https://www.patrickastarita.com/",
+        bio: "I am Patrick, I'm someone who is humbly curious about the world and I often form fast opinions in order to pursue coherence and structure memories. I work on sustainable industrialization and am interested in skiing, golf, both the study & improvement of living systems.",
+        github: "https://www.github.com/pastarita",
+        cohort: "Fa24",
+        status: "hired",
+        currentCompany: "Recharged.com",
+        headshot: "/images/patrick.jpg"
+    },
+    {
+        name: "Pranav Patil",
+        email: "ompranav97@gmail.com",
+        linkedin: "linkedin.com/in/pranavrpatil",
+        twitter: "x.com/pranavsf",
+        resume: "N/A",
+        website: "breakfastmaxi.com",
+        github: "github.com/pranavpatilsce",
+        cohort: "Su24",
+        status: "founded",
+        currentCompany: "lsd.so",
+        headshot: "/images/pranav.jpg"
+    },
+    {
+        name: "Norman Qian",
+        email: "normanqian@gmail.com",
+        linkedin: "http://linkedin.com/in/norman-qian",
+        twitter: "https://x.com/NormanQian",
+        resume: "https://normanqian.com/resume",
+        website: "normanqian.com",
+        github: "https://github.com/elizasviel",
+        cohort: "Su24",
+        status: "hired",
+        currentCompany: "Alpha School",
+        headshot: "/images/norman.jpg"
+    },
+    {
+        name: "Sarah Bicknell",
+        email: "sarahebicknell@gmail.com",
+        linkedin: "N/A",
+        twitter: "x.com/hyperdiscogirl",
+        resume: "N/a",
+        website: "hyperdis.co",
+        github: "https://github.com/sarelbic",
+        cohort: "Su24",
+        status: "hired",
+        currentCompany: "Synthesis Tutor",
+        headshot: "/images/sarah.jpg"
+    },
+    {
+        name: "Lúí Smyth",
+        email: "luismyth@gmail.com",
+        linkedin: "https://www.linkedin.com/in/luismyth",
+        twitter: "https://x.com/yablochko",
+        resume: "https://lui.ie/projects",
+        website: "https://lui.ie",
+        bio: "Dublin-based AI product leader turned builder",
+        github: "https://github.com/yablochko8",
+        cohort: "Su24",
+        status: "founded",
+        currentCompany: "https://inni.bio",
+        headshot: "/images/lui.jpg"
+    },
+    {
+        name: "Bruno Lloret",
+        email: "caballoret@gmail.com",
+        linkedin: "bruno-Lloret-b8793b289",
+        twitter: "brunolloret",
+        resume: "various CVs depending on the client",
+        website: "brunolloret.co",
+        bio: "Creator with 10+ of multidisciplinary experience spanning fiction writing, research, painting, and education.",
+        github: "brunoLloret",
+        cohort: "Su24",
+        status: "founded",
+        currentCompany: "Own creative agency",
+        headshot: "/images/bruno.jpg"
     }
-]; 
+];
+
+// Sort candidates by status (open first, then hired/founded)
+export const sortedCandidates = [...candidates].sort((a, b) => {
+    if (a.status === 'open' && b.status !== 'open') return -1;
+    if (a.status !== 'open' && b.status === 'open') return 1;
+    return 0;
+});
+
+// Filter recent candidates (Su25, Sp25, or Fa25)
+export const recentCandidates = sortedCandidates.filter(candidate => {
+    const recentCohorts = ['Su25', 'Sp25', 'Fa24'];
+    return recentCohorts.includes(candidate.cohort);
+});
+
+// Filter past candidates (all other cohorts)
+export const pastCandidates = sortedCandidates.filter(candidate => {
+    const recentCohorts = ['Su25', 'Sp25', 'Fa24'];
+    return !recentCohorts.includes(candidate.cohort);
+});
