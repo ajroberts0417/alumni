@@ -117,7 +117,7 @@ export default function EmailSubscribe({ mode }: EmailSubscribeProps) {
                 </div>
                 <ActionMessage state={state} mode="arcade" />
                 <p className="text-xs text-electric-yellow font-pixel">
-                    GET EMAILS WHEN WE PRODUCE MORE TALENT. YUM. FREE TALENT.
+                    GET EMAILS WHEN WE UNLOCK MORE TALENT. WOW. FREE TALENT.
                 </p>
             </form>
         </div>

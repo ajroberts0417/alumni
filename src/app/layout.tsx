@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Space_Mono, Press_Start_2P } from 'next/font/google'
 import "./globals.css";
 
 const geistSans = Geist({
@@ -11,6 +12,20 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const spaceMono = Space_Mono({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  display: 'swap',
+  variable: "--font-mono",
+})
+
+const pressStart2P = Press_Start_2P({
+  subsets: ['latin'],
+  weight: ['400'],
+  display: 'swap',
+  variable: "--font-pixel",
+})
 
 export const metadata: Metadata = {
   title: "Fractal Tech Alumni Roster",
@@ -37,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${spaceMono.variable} ${pressStart2P.variable} antialiased`}
       >
         {children}
       </body>
