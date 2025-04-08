@@ -1,9 +1,12 @@
+'use client';
 import { Github, Linkedin, Twitter, Globe, FileText, Mail } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import BackgroundTile from './BackgroundTile';
 import { candidates } from '../data/candidates';
+import EmailSubscribe from './EmailSubscribe';
 
 function ArcadeMode() {
+
     const colorScheme = [
         'bg-hot-pink', 'bg-neon-green', 'bg-cyber-blue',
         'bg-bright-orange', 'bg-electric-yellow', 'bg-cyber-blue', 'bg-retro-purple'
@@ -14,14 +17,14 @@ function ArcadeMode() {
             <div className="py-12 px-4 sm:px-6 lg:px-8">
                 {/* Mode toggle button */}
                 <Link
-                    to="/"
+                    href="/"
                     className="fixed bottom-4 right-4 z-40 px-4 py-2 bg-white border border-black text-black hover:bg-gray-100 w-64 text-center transition-colors"
                 >
                     ascii mode
                 </Link>
 
                 <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-16">
+                    <div className="text-center mb-8">
                         <h1 className="font-pixel text-white mb-6 title-glitch">
                             FRACTAL ARCADE MODE!!!
                         </h1>
@@ -29,6 +32,9 @@ function ArcadeMode() {
                             hire my students :)
                         </h2>
                     </div>
+
+                    {/* Email Subscription Form */}
+                    <EmailSubscribe mode="arcade" />
 
                     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                         {candidates.map((candidate) => (
@@ -94,7 +100,7 @@ function ArcadeMode() {
                                 </div>
 
                                 {/* Scanline effect decoration */}
-                                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-hot-pink via-cyber-blue to-neon-green opacity-70"></div>
+                                <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-hot-pink via-cyber-blue to-neon-green opacity-70"></div>
                             </div>
                         ))}
                     </div>

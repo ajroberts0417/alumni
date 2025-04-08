@@ -1,14 +1,16 @@
-import { Link } from 'react-router-dom';
+'use client';
+import Link from 'next/link';
+import Image from 'next/image';
 import { candidates } from '../data/candidates';
-import hdbitsy from '../img/bghd_nyc.png'
 import { Github, Linkedin, Twitter, Globe, FileText, Mail } from 'lucide-react';
+import EmailSubscribe from './EmailSubscribe';
 
 function AsciiMode() {
     return (
         <div className="bg-white text-black font-mono p-8">
             {/* Arcade Mode toggle button */}
             <Link
-                to="/arcade"
+                href="/arcade"
                 className="fixed bottom-4 right-4 z-40 px-4 py-2 bg-retro-purple border-2 border-hot-pink text-white font-pixel text-shadow-neon hover:scale-105 transition-transform w-64 text-center"
             >
                 arcade mode
@@ -33,7 +35,6 @@ function AsciiMode() {
 `}
             </pre>
 
-
             {/* Candidates List */}
             <div className="max-w-4xl mx-auto">
                 {/* Fractal Info */}
@@ -44,6 +45,8 @@ function AsciiMode() {
                     is NYC's new training program for AI engineers. Our placement rate is 100%. First cohort alumni have raised money from South Park Commons and work at
                     startups like Alpha School, Synthesis, HDR, and Ellis. Email andrew@fractalbootcamp.com to get in touch.
                 </p>
+                {/* Email Subscription Form */}
+                <EmailSubscribe mode="ascii" />
                 {candidates.map((candidate, index) => (
                     <div key={candidate.name} className="mb-10 pb-6 border-b border-gray-300">
                         <div className="flex flex-col md:flex-row gap-6">
@@ -109,9 +112,11 @@ function AsciiMode() {
             </div>
 
             {/* New ASCII NYC Skyline */}
-            <img
-                src={hdbitsy}
+            <Image
+                src="/img/bghd_nyc.png"
                 alt="NYC Skyline"
+                width={500}
+                height={200}
                 className="w-full max-w-md mx-auto mt-10 rounded-lg shadow-lg"
             />
         </div>
