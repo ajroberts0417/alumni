@@ -137,7 +137,7 @@ function AsciiMode() {
                         Fractal Tech
                     </a>{" "}
                     is NYC's new training program for AI engineers. Our placement rate is 100%. First cohort alumni have raised money from South Park Commons and work at
-                    startups like Alpha School, Synthesis, HDR, and Ellis. Email andrew@fractalbootcamp.com to get in touch.
+                    startups like Alpha School, Synthesis, AWS, and Ellis. Email andrew@fractalbootcamp.com to get in touch.
                 </p>
                 {/* Email Subscription Form */}
                 <EmailSubscribe mode="ascii" />
