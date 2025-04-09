@@ -71,7 +71,7 @@ export const candidates: Candidate[] = [
         twitter: "https://x.com/ajay_bhargava",
         resume: "https://drive.google.com/file/d/1weW7CjPRMMbcMFwMg65yTzZb3s7u_PEY/view?usp=drive_link",
         website: "https://ajay-bhargava.github.io",
-        bio: "PhD researcher, Machine Learning researcher, Founder, Designer. Ajay does it all. He's probably going to raise for his growing startup, tbh, but maybe it's worth reaching out to him anyway.   -Andrew",
+        bio: "PhD researcher, Machine Learning researcher, Founder. He's probably going to raise for his growing startup, tbh, but maybe it's worth reaching out to him anyway.   -Andrew",
         github: "https://github.com/ajay-bhargava",
         headshot: "https://media.licdn.com/dms/image/v2/C4E03AQHjK0nUgkm_qA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1668045721230?e=1748476800&v=beta&t=lLbXQRo8sc7OKLhmyGmGOt4EFnEtOhect0MqPK7WUWw",
         cohort: "Sp25",
