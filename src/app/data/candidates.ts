@@ -24,7 +24,8 @@ export const candidates: Candidate[] = [
         bio: "Jacob is a bright, young software engineer, mathematician, and data scientist. He wants to have a serious impact at a software or AI company with an exceptional team and has been rigorously studying software and AI engineering for the last several months.",
         headshot: "https://media.licdn.com/dms/image/v2/D4E03AQG85gIxelBfaA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1680124740365?e=1748476800&v=beta&t=ZfWIQspwlkil87_lrZjOycnWWsKbaKtBiTSg6kGdEEw",
         cohort: "Fa24",
-        status: "open"
+        status: "hired",
+        currentCompany: "iCapital"
     },
     {
         name: "Isaac Gemal",
@@ -62,7 +63,8 @@ export const candidates: Candidate[] = [
         github: "https://github.com/erosika",
         headshot: "https://media.licdn.com/dms/image/v2/D4E03AQHWbDFeVUCo5w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725224435831?e=1748476800&v=beta&t=NP-GTrk_g-j0RX15fkmiGluv6jH7ofZGf04QVSiNG4I",
         cohort: "Sp25",
-        status: "open"
+        status: "hired",
+        currentCompany: "Plastic Labs"
     },
     {
         name: "Ajay Bhargava",
@@ -75,7 +77,8 @@ export const candidates: Candidate[] = [
         github: "https://github.com/ajay-bhargava",
         headshot: "https://media.licdn.com/dms/image/v2/C4E03AQHjK0nUgkm_qA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1668045721230?e=1748476800&v=beta&t=lLbXQRo8sc7OKLhmyGmGOt4EFnEtOhect0MqPK7WUWw",
         cohort: "Sp25",
-        status: "open"
+        status: "founded",
+        currentCompany: "bynd.bio"
     },
     {
         name: "Alan Mark Garber",
