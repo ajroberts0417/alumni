@@ -266,6 +266,20 @@ export const candidates: Candidate[] = [
         currentCompany: "TypeSafe AI",
         headshot: "https://media.licdn.com/dms/image/v2/D4E03AQHeODqsgx9jZA/profile-displayphoto-shrink_400_400/B4EZZFxwamGYAw-/0/1744927393929?e=1750291200&v=beta&t=LYbVz0gOayodhuERFJ3scGNYEYc5UcQrJE5UkWFSQRE"
     },
+    {
+        name: "Parth Agrawal",
+        email: "pvagrawal0@gmail.com",
+        linkedin: "https://www.linkedin.com/in/productparth/",
+        twitter: "https://x.com/mr_samosaman/",
+        resume: "https://parthagrawal.com/resume",
+        website: "https://parthagrawal.com",
+        bio: "Parth is a cyborg engineer interested in creating new forms and substrates for computing. He currently does interface research and product engineering for AI startups in NYC.",
+        github: "https://github.com/parth-agrawal",
+        cohort: "Su24",
+        status: "hired",
+        currentCompany: "Consulting: Sandbar, ESAI, HDR",
+        headshot: "https://media.licdn.com/dms/image/v2/D4E03AQF97cnMl7Hw4A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725590217970?e=1750291200&v=beta&t=GGfN5A2oWny7DdTj7YrphEqyw1HIzsJbpCX4czKvVhA"
+    },
 ];
 
 // Sort candidates by status (open first, then hired/founded)
