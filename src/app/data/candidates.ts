@@ -251,7 +251,21 @@ export const candidates: Candidate[] = [
         status: "founded",
         currentCompany: "Own creative agency",
         headshot: "/images/bruno.jpg"
-    }
+    },
+    {
+        name: "Brian Smiley",
+        email: "briantsmiley42@gmail.com",
+        linkedin: "https://www.linkedin.com/in/brian-smiley-1289a6121/",
+        twitter: "https://x.com/BinarySmile",
+        resume: "https://binarysmile.com/resume.pdf",
+        website: "https://binarysmile.com",
+        github: "https://github.com/briansmiley",
+        bio: "I'm a self-taught software engineer and former scientist who loved to tinker with games in my free time. Now I'm building the frontier of AI systems.",
+        cohort: "Su24",
+        status: "hired",
+        currentCompany: "TypeSafe AI",
+        headshot: "https://media.licdn.com/dms/image/v2/D4E03AQHeODqsgx9jZA/profile-displayphoto-shrink_400_400/B4EZZFxwamGYAw-/0/1744927393929?e=1750291200&v=beta&t=LYbVz0gOayodhuERFJ3scGNYEYc5UcQrJE5UkWFSQRE"
+    },
 ];
 
 // Sort candidates by status (open first, then hired/founded)
