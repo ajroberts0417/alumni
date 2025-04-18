@@ -50,7 +50,8 @@ export const candidates: Candidate[] = [
         bio: "In a previous life I worked on banking infrastructure at some of Australia's top financial institutions. In 2024, I leaned in to a desire for more creativity in my work and I made the leap to software engineering through NYC's Fractal Tech SWE Accelerator. This was like a religious experience where I fell deeply in love with the process of building software. I built products ranging from AI voice therapists to e-commerce platforms to PDF analysis tools and many many more. I won an AI Agents hackathon and shipped real features for local NYC startups. Now i'm looking to join a brilliant team of engineers and creatives on a mission to build something incredible.",
         headshot: "/images/mahlen.png",
         cohort: "Fa24",
-        status: "open"
+        status: "hired",
+        currentCompany: "tmrw"
     },
     {
         name: "Eri Barrett",
