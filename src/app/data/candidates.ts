@@ -288,7 +288,7 @@ export const candidates: Candidate[] = [
         twitter: "https://x.com/AadityaDesai9",
         resume: "https://aadityadesai-resume.vercel.app/",
         website: "https://aadityadesai.vercel.app/",
-        bio: "I’m Aaditya Desai and I'm a young software developer looking for an exceptional team to work with. I have a wide set of skills, easy to work with, and finished up a 3 month long, 60-hour week coding program. I'm working as an intern at Frame Media, but I’m currently looking for a software engineering internship where I can help other startups ship faster. Some of my work is here: https://aadityadesai.vercel.app/ I would like to work in defense tech companies like Anduril as a long-term goal of mine. I would like to work on their developmental weapons that they are creating for the U.S. military",
+        bio: "I’m Aaditya Desai, a young software developer and student at Cypress College seeking an exceptional team. I possess a wide skill set, am easy to work with, and work hard to get what I want. Currently an intern at Frame Media, I'm looking for a software engineering internship where I can help startups ship faster. My long-term goal is to work in defense tech companies like Anduril, developing weapons for the U.S. military.",
         github: "https://github.com/adesai47",
         headshot: "https://media.licdn.com/dms/image/v2/D5603AQF6sCVvAUbBkA/profile-displayphoto-shrink_400_400/B56ZUiLB6iGoAg-/0/1740035073216?e=1750896000&v=beta&t=jx0cQ03pB0hVHJPb2FlnLq4Ys3S2iQFf5m4jXLIYRdg",
         cohort: "Fa24",
