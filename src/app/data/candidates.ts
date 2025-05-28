@@ -11,6 +11,7 @@ export interface Candidate {
     cohort: string;
     status: 'open' | 'hired' | 'founded';
     currentCompany?: string;
+    companyUrl?: string;
 }
 
 export const candidates: Candidate[] = [
@@ -106,7 +107,8 @@ export const candidates: Candidate[] = [
         headshot: "https://media.licdn.com/dms/image/v2/D4E03AQELavzeGQET1g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1698239694877?e=1748476800&v=beta&t=VoEMy_j5fJwFTF2wWqVeII9T4w5OI1_ect0-21xTApE",
         cohort: "Sp25",
         status: "hired",
-        currentCompany: "Simple Closure"
+        currentCompany: "Simple Closure",
+        companyUrl: "https://simpleclosure.com"
     },
     {
         name: "Chenshu Zhou",
