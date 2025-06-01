@@ -102,7 +102,7 @@ export const candidates: Candidate[] = [
         twitter: "",
         resume: "https://ewang.vercel.app/wang-resume-2025.pdf",
         website: "https://ewang.vercel.app/",
-        bio: "Eric is a Design Engineer with an eye for detail and full-stack AI experience. He can do it all -- design, frontend, backend, AI. An obvious choice if you need a smart, capable generalist to improve your product.  -Andrew",
+        bio: "Eric is a Design Engineer with an eye for detail and full-stack AI experience. He can do it all -- design, frontend, backend, AI. An obvious choice if you need a smart, capable generalist.  -Andrew",
         github: "https://github.com/ewang0",
         headshot: "https://media.licdn.com/dms/image/v2/D4E03AQELavzeGQET1g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1698239694877?e=1748476800&v=beta&t=VoEMy_j5fJwFTF2wWqVeII9T4w5OI1_ect0-21xTApE",
         cohort: "Sp25",
