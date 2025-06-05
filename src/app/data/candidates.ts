@@ -23,7 +23,7 @@ export const candidates: Candidate[] = [
         resume: "https://www.jacobwaldor.com/resume",
         website: "https://www.jacobwaldor.com",
         bio: "Jacob is a bright, young software engineer, mathematician, and data scientist. He wants to have a serious impact at a software or AI company with an exceptional team and has been rigorously studying software and AI engineering for the last several months.",
-        headshot: "https://media.licdn.com/dms/image/v2/D4E03AQG85gIxelBfaA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1680124740365?e=1748476800&v=beta&t=ZfWIQspwlkil87_lrZjOycnWWsKbaKtBiTSg6kGdEEw",
+        headshot: "https://media.licdn.com/dms/image/v2/D4E03AQG85gIxelBfaA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1680124740365?e=1754524800&v=beta&t=6uAJ_vd5Ru0j2hjo42880Xvz05oLcZ9UX8-SDZhJL34",
         cohort: "Fa24",
         status: "hired",
         currentCompany: "iCapital"
