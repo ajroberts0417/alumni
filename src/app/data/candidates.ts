@@ -23,7 +23,7 @@ export const candidates: Candidate[] = [
         resume: "https://www.jacobwaldor.com/resume",
         website: "https://www.jacobwaldor.com",
         bio: "Jacob is a bright, young software engineer, mathematician, and data scientist. He wants to have a serious impact at a software or AI company with an exceptional team and has been rigorously studying software and AI engineering for the last several months.",
-        headshot: "https://media.licdn.com/dms/image/v2/D4E03AQG85gIxelBfaA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1680124740365?e=1754524800&v=beta&t=6uAJ_vd5Ru0j2hjo42880Xvz05oLcZ9UX8-SDZhJL34",
+        headshot: "/images/jacob.png",
         cohort: "Fa24",
         status: "hired",
         currentCompany: "iCapital"
@@ -63,7 +63,7 @@ export const candidates: Candidate[] = [
         website: "https://eri-dev.vercel.app/",
         bio: "Hey I am Eri and I am a self-taught dev with a background in computer music. I love to build beautiful software for the world to enjoy. As a forever learner who's extremely dedicated with clarity of focus, I love to dive deep into problems & ship swiftly. My mission in tech is to architect transformative digital landscapes ––creating systems that reshape how we interact with technology, remaining accessible to all.",
         github: "https://github.com/erosika",
-        headshot: "https://media.licdn.com/dms/image/v2/D4E03AQHWbDFeVUCo5w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725224435831?e=1748476800&v=beta&t=NP-GTrk_g-j0RX15fkmiGluv6jH7ofZGf04QVSiNG4I",
+        headshot: "/images/eri.png",
         cohort: "Sp25",
         status: "hired",
         currentCompany: "Plastic Labs"
@@ -77,7 +77,7 @@ export const candidates: Candidate[] = [
         website: "https://ajay-bhargava.github.io",
         bio: "I'm a self-taught builder who has previously made and shipped drugs that target brain cancers, contributed computer vision tech to the US military, and is now building an AI powered scientific services marketplace to make doing science with others faster and better for all.",
         github: "https://github.com/ajay-bhargava",
-        headshot: "https://media.licdn.com/dms/image/v2/C4E03AQHjK0nUgkm_qA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1668045721230?e=1748476800&v=beta&t=lLbXQRo8sc7OKLhmyGmGOt4EFnEtOhect0MqPK7WUWw",
+        headshot: "/images/ajay.png",
         cohort: "Sp25",
         status: "founded",
         currentCompany: "bynd.bio"
@@ -104,7 +104,7 @@ export const candidates: Candidate[] = [
         website: "https://ewang.vercel.app/",
         bio: "Eric is a Design Engineer with an eye for detail and full-stack AI experience. He can do it all -- design, frontend, backend, AI. An obvious choice if you need a smart, capable generalist.  -Andrew",
         github: "https://github.com/ewang0",
-        headshot: "https://media.licdn.com/dms/image/v2/D4E03AQELavzeGQET1g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1698239694877?e=1748476800&v=beta&t=VoEMy_j5fJwFTF2wWqVeII9T4w5OI1_ect0-21xTApE",
+        headshot: "/images/eric.png",
         cohort: "Sp25",
         status: "hired",
         currentCompany: "Simple Closure",
@@ -118,7 +118,7 @@ export const candidates: Candidate[] = [
         resume: "https://chenshuz-resume.vercel.app/",
         website: "https://chenshuz.vercel.app/",
         bio: "I'm Chenshu, a software engineer with 4 years of experience at AWS, where I built scalable backend systems and APIs. I'm looking for a mission driven team to build things with positive social impacts.",
-        headshot: "https://media.licdn.com/dms/image/v2/C5603AQHlLZNFSmTrvw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1543434361525?e=1748476800&v=beta&t=dwFUc8PIogfkJLBgpSiEHsAtZ7G38iL_KjD47qN2azw",
+        headshot: "/images/chenshu.png",
         cohort: "Fa24",
         status: "hired",
         currentCompany: "Amazon Web Services"
@@ -130,7 +130,7 @@ export const candidates: Candidate[] = [
         twitter: "https://x.com/RashikShahjahan",
         resume: "https://www.rashik.sh/resumeRashikShahjahan.pdf",
         website: "https://www.rashik.sh/",
-        headshot: "https://avatars.githubusercontent.com/u/20547252?v=4",
+        headshot: "/images/rashik.png",
         bio: "I am a software engineer with expertise in full-stack development, distributed systems, and AI. I co-invented a patent-pending system to process large medical corpora and led the development and deployment of a metrics monitoring system across four major clients, including Mayo Clinic and Duke Hospital.",
         cohort: "Fa24",
         status: "hired",
@@ -147,7 +147,7 @@ export const candidates: Candidate[] = [
         cohort: "Fa24",
         status: "hired",
         currentCompany: "Goodie AI",
-        headshot: "https://media.licdn.com/dms/image/v2/D4E03AQGQi9TX-x1_0w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718401347792?e=1749686400&v=beta&t=GoxUcS_hKNc4fcpVTqxDQ44YrNzP9_bJN8CcJ-WIXvA"
+        headshot: "/images/faisal.png"
     },
     {
         name: "Dorothy Ren",
@@ -268,7 +268,7 @@ export const candidates: Candidate[] = [
         cohort: "Su24",
         status: "hired",
         currentCompany: "TypeSafe AI",
-        headshot: "https://media.licdn.com/dms/image/v2/D4E03AQHeODqsgx9jZA/profile-displayphoto-shrink_400_400/B4EZZFxwamGYAw-/0/1744927393929?e=1750291200&v=beta&t=LYbVz0gOayodhuERFJ3scGNYEYc5UcQrJE5UkWFSQRE"
+        headshot: "/images/brian.png"
     },
     {
         name: "Parth Agrawal",
@@ -282,7 +282,7 @@ export const candidates: Candidate[] = [
         cohort: "Su24",
         status: "hired",
         currentCompany: "Consulting: Sandbar, ESAI, HDR",
-        headshot: "https://media.licdn.com/dms/image/v2/D4E03AQF97cnMl7Hw4A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725590217970?e=1750291200&v=beta&t=GGfN5A2oWny7DdTj7YrphEqyw1HIzsJbpCX4czKvVhA"
+        headshot: "/images/parth.png"
     },
     {
         name: "Aaditya Desai",
@@ -291,9 +291,9 @@ export const candidates: Candidate[] = [
         twitter: "https://x.com/AadityaDesai9",
         resume: "https://aadityadesai-resume.vercel.app/",
         website: "https://aadityadesai.vercel.app/",
-        bio: "I’m Aaditya Desai, a young software developer and student at Cypress College seeking an exceptional team. I possess a wide skill set, am easy to work with, and work hard to get what I want. Currently an intern at Frame Media, I'm looking for a software engineering internship where I can help startups ship faster. My long-term goal is to work in defense tech companies like Anduril, developing weapons for the U.S. military.",
+        bio: "I'm Aaditya Desai, a young software developer and student at Cypress College seeking an exceptional team. I possess a wide skill set, am easy to work with, and work hard to get what I want. Currently an intern at Frame Media, I'm looking for a software engineering internship where I can help startups ship faster. My long-term goal is to work in defense tech companies like Anduril, developing weapons for the U.S. military.",
         github: "https://github.com/adesai47",
-        headshot: "https://media.licdn.com/dms/image/v2/D5603AQF6sCVvAUbBkA/profile-displayphoto-shrink_400_400/B56ZUiLB6iGoAg-/0/1740035073216?e=1750896000&v=beta&t=jx0cQ03pB0hVHJPb2FlnLq4Ys3S2iQFf5m4jXLIYRdg",
+        headshot: "/images/aaditya.png",
         cohort: "Fa24",
         status: "open",
         currentCompany: "Frame Media"
