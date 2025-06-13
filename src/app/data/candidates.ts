@@ -93,7 +93,8 @@ export const candidates: Candidate[] = [
         github: "https://github.com/OldEphraim",
         headshot: "/images/alan.jpeg",
         cohort: "Sp25",
-        status: "open"
+        status: "hired",
+        currentCompany: "HDR"
     },
     {
         name: "Eric Wang",
