@@ -285,20 +285,20 @@ export const candidates: Candidate[] = [
         currentCompany: "Consulting: Sandbar, ESAI, HDR",
         headshot: "/images/parth.png"
     },
-    {
-        name: "Aaditya Desai",
-        email: "aadityadesai09@gmail.com",
-        linkedin: "https://www.linkedin.com/in/aaditya-desai-2231851b6/",
-        twitter: "https://x.com/AadityaDesai9",
-        resume: "https://aadityadesai-resume.vercel.app/",
-        website: "https://aadityadesai.vercel.app/",
-        bio: "I'm Aaditya Desai, a young software developer and student at Cypress College seeking an exceptional team. I possess a wide skill set, am easy to work with, and work hard to get what I want. Currently an intern at Frame Media, I'm looking for a software engineering internship where I can help startups ship faster. My long-term goal is to work in defense tech companies like Anduril, developing weapons for the U.S. military.",
-        github: "https://github.com/adesai47",
-        headshot: "/images/aaditya.png",
-        cohort: "Fa24",
-        status: "hired",
-        currentCompany: "Back in school!"
-    },
+    // {
+    //     name: "Aaditya Desai",
+    //     email: "aadityadesai09@gmail.com",
+    //     linkedin: "https://www.linkedin.com/in/aaditya-desai-2231851b6/",
+    //     twitter: "https://x.com/AadityaDesai9",
+    //     resume: "https://aadityadesai-resume.vercel.app/",
+    //     website: "https://aadityadesai.vercel.app/",
+    //     bio: "I'm Aaditya Desai, a young software developer and student at Cypress College seeking an exceptional team. I possess a wide skill set, am easy to work with, and work hard to get what I want. Currently an intern at Frame Media, I'm looking for a software engineering internship where I can help startups ship faster. My long-term goal is to work in defense tech companies like Anduril, developing weapons for the U.S. military.",
+    //     github: "https://github.com/adesai47",
+    //     headshot: "/images/aaditya.png",
+    //     cohort: "Fa24",
+    //     status: "hired",
+    //     currentCompany: "Back in school!"
+    // },
 ];
 
 // Sort candidates by status (open first, then hired/founded)
