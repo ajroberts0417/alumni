@@ -295,8 +295,8 @@ export const candidates: Candidate[] = [
         github: "https://github.com/adesai47",
         headshot: "https://media.licdn.com/dms/image/v2/D5603AQF6sCVvAUbBkA/profile-displayphoto-shrink_400_400/B56ZUiLB6iGoAg-/0/1740035073216?e=1750896000&v=beta&t=jx0cQ03pB0hVHJPb2FlnLq4Ys3S2iQFf5m4jXLIYRdg",
         cohort: "Fa24",
-        status: "open",
-        currentCompany: "Frame Media"
+        status: "hired",
+        currentCompany: "Back in school!"
     },
 ];
 
